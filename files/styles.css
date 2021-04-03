@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", "Open sans";
+    color: #fff;
+}
+
+body{
+    content: "";
+    background: hsl(236, 21%, 26%);
+    height: 100vh;
+    width: 100%;
+}
+
+.container-top{
+    background: url("../images/bg-stars.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+}
+
+.top-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:auto;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 7em 0;
+}
+
+.container-bottom{
+    background: url("../images/pattern-hills.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100%;
+}
+.bottom-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    padding: 2em 0;
+}
+.links{
+    padding: 1em;
+}
+.links img{
+    padding: 0 13px;
+}
+
+/* flip card style */
+
+.top-flip{
+    height: 60px;
+    width: 110px;
+    background: hsl(237, 18%, 59%);
+    transform: rotateZ(20deg, 30deg);
+    /* box-shadow: -1px -12px 27px 0px rgba(51,48,48,0.36); */
+    position: relative;
+}
+.bottom-flip{
+    height: 60px;
+    width: 110px;
+    margin-top: 1px;
+    background: hsl(237, 18%, 59%);
+    transform: rotateZ(20deg, 30deg);
+    /* box-shadow: -1px 21px 27px 0px rgba(51,48,48,0.36); */
+    position: relative;
+}
+
+.countdown{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1em;
+    justify-content: center;
+    align-items: center;
+    margin: 2em 0;
+    padding: 1em 0;
+}
+
+.hour, .minutes, .seconds{
+    position: relative;
+}
+.time-hr{
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 4.5em;
+    font-weight: 900;
+}
+
